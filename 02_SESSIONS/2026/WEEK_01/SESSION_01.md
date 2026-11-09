@@ -26,7 +26,6 @@
 ## 3. Practical Exercises
 - Chưa thực hiện; dùng buổi này để ghi assessment đầu vào.
 
-## 3. Practical Exercises
 | Exercise | Result | Independent? | Evidence / Link |
 |---|---|---|---|
 | | | Yes / Partly / No | |

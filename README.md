@@ -10,6 +10,10 @@
 - Dự án chính: HotelBooking.
 - Dự án mở rộng: Mini Chat Application (chỉ triển khai khi nền tảng chính đã vững).
 
+## Đồng bộ với ChatGPT
+
+Xem `GITHUB_SYNC_WORKFLOW.md` để biết quy trình ghi nhật ký, review và cập nhật repository sau mỗi buổi học. Mỗi lần muốn đồng bộ, dùng câu lệnh **Tổng kết và đồng bộ repo**; nội dung sẽ được kiểm tra trước khi ghi lên GitHub.
+
 ## Bắt đầu
 
 1. Đọc `AI_CONTEXT.md` và `LEARNING_RULES.md`.

@@ -49,6 +49,15 @@ Khi kết thúc buổi học:
 4. Tạo nội dung Markdown theo `99_TEMPLATES/SESSION_TEMPLATE.md`.
 5. Chỉ đề xuất cập nhật trạng thái khi có bằng chứng.
 
+## GitHub Sync Protocol
+- Repository: `huydo006/springboot-learning-journey` (default branch: `master`).
+- Before planning a new session, read the latest session and current state from GitHub when repository access is available.
+- At the end of a session, prepare the Markdown session log and identify only the state files that genuinely need changes.
+- Show a concise change summary and wait for the user's explicit confirmation before writing to GitHub.
+- After confirmation, create/update files using the repository's existing folder structure and report the exact paths and commit result.
+- Never claim a GitHub update succeeded unless the connector confirms it.
+- Follow `GITHUB_SYNC_WORKFLOW.md` as the source of truth for the sync process.
+
 ## Teaching Style
 - Giải thích từ bản chất, sau đó mới đến annotation/API.
 - Đặt câu hỏi gợi mở và bài tập thực hành.

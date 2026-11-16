@@ -4,7 +4,7 @@
 
 | Week | Topic | Status | Completion | Evidence / Review |
 |---:|---|---|---:|---|
-| 01 | Spring IoC, DI, Bean | In Progress | 0% | — |
+| 01 | Spring IoC, DI, Bean | Completed | 100% | [Review Week 01](03_ASSESSMENTS/WEEKLY_REVIEWS/REVIEW_WEEK_01.md); bài Notification System (`Week01_test.zip`, review trong chat 2026-11-16) |
 | 02 | Spring Boot fundamentals, request lifecycle | Not Started | 0% | — |
 | 03 | JPA/Hibernate internals | Not Started | 0% | — |
 | 04 | Query và tối ưu truy vấn | Not Started | 0% | — |
@@ -33,4 +33,4 @@
 
 ## Weekly Notes
 
-- Week 01: Chưa bắt đầu; cần assessment đầu vào.
+- Week 01 (2026-11-16): Hoàn thành mục tiêu nền tảng IoC/DI, Bean, Scope, Lifecycle, Constructor Injection, Configuration và Component Scanning; tự viết bài Notification System cơ bản. Đánh giá hướng dẫn 8.5/10, không phải điểm kiểm thử tự động. Bản ZIP đã review dùng @Primary và chưa gọi send(); người học báo đã chỉnh @Qualifier và send() nhưng chưa gửi lại để kiểm chứng. Thời lượng thực học chưa xác nhận.

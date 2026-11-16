@@ -5,19 +5,23 @@
 ## Vị trí hiện tại
 
 - Roadmap: 16 tuần
-- Current Week: 01
+- Current Week: 02 (sắp bắt đầu; chưa học)
 - Current Phase: Spring Core
-- Current Topic: Spring IoC và Dependency Injection
-- Completed Sessions: 0
-- Last Updated: 2026-11-09
-- Overall Status: Not Started
+- Current Topic: Spring Boot fundamentals, request lifecycle (tiếp theo)
+- Completed Sessions: 1 learning/review cycle recorded (buổi thực tế không được đếm chi tiết)
+- Last Updated: 2026-11-16
+- Overall Status: Week 01 Completed; Week 02 Not Started
 
-## Hồ sơ năng lực ban đầu
+## Hồ sơ năng lực
 
 | Năng lực | Mức hiện tại | Trạng thái | Bằng chứng / ghi chú |
 |---|---|---|---|
 | Java Core, OOP, Collections | Khá ổn | Stable | Tự viết được OOP và xử lý logic |
-| Spring IoC/DI | Cơ bản | Needs Assessment | Cần kiểm tra lại bản chất |
+| Spring IoC/DI | Khá ở mức cơ bản | Practiced | Giải thích bằng lời, viết Constructor Injection và Notification System; cần luyện tình huống nhiều dependency |
+| Spring Bean / Scope | Khá | Practiced | Phân biệt Bean và object, Singleton/Prototype, lifecycle; ví dụ EmailService prototype |
+| Spring Configuration | Khá | Practiced | Tự viết @Configuration + @Bean cho PaymentClient và SmsSender |
+| Component Scanning | Khá (lý thuyết) | Explained | Xác định đúng phạm vi quét package và @Bean tạo từ AppConfig |
+| @Primary / @Qualifier | Cơ bản | Needs Practice | @Primary trong ZIP; người học báo đã tự sửa @Qualifier, chưa review code mới |
 | Controller-Service-Repository | Cơ bản | Practiced | Đã làm CRUD |
 | REST API | Cơ bản | Practiced | Đã xây dựng API CRUD |
 | Spring Data JPA | Cơ bản | Needs Review | Đã học quan hệ entity, cascade, LAZY/EAGER |
@@ -31,24 +35,24 @@
 
 ## Điểm mạnh hiện tại
 
-- Có nền tảng Java OOP và Collections.
-- Đã triển khai CRUD bằng Spring Boot.
-- Đã tiếp xúc JPA relationship, DTO và MapStruct.
-- Có kinh nghiệm debug lỗi mapping và quan hệ Entity trong project.
+- Có nền tảng Java OOP và Collections, đã triển khai CRUD bằng Spring Boot.
+- Giải thích được IoC/DI, Singleton/Prototype, @Bean/@Component và Component Scanning bằng lời của mình.
+- Tự viết ví dụ Constructor Injection, @Bean PaymentClient và code lifecycle.
+- Có bài thực hành Notification System với interface, hai implementation, @Component, @Bean, @Primary và callback lifecycle.
 
 ## Điểm yếu / điều cần xác minh
 
-- Mức độ hiểu sâu Spring Container, Bean Lifecycle và Auto Configuration.
+- Phân biệt chính xác Spring khởi tạo Singleton lúc startup với việc lấy Bean qua getBean().
+- Dùng @Qualifier thường xuyên trong bài thực hành; phiên bản sửa sau review chưa được kiểm chứng.
+- Cần luyện scope/lifecycle với nhiều Bean phụ thuộc nhau; chưa xác nhận output console của các demo.
 - Hiểu biết thực tế về persistence context, transaction và SQL do Hibernate sinh ra.
-- Khả năng thiết kế business logic độc lập, không chỉ nối Controller-Service-Repository.
-- Khả năng viết test và giải thích kiến trúc.
+- Khả năng thiết kế business logic độc lập, viết test và giải thích kiến trúc.
 
 ## Ưu tiên tiếp theo
 
-1. Đánh giá kiến thức IoC, DI, Bean.
-2. Học Spring Bean Lifecycle và Configuration.
-3. Tạo bài thực hành nhỏ để kiểm chứng.
-4. Cuối tuần đánh giá trước khi chuyển sang Spring Boot fundamentals.
+1. Week 02: Spring Boot fundamentals và request lifecycle theo roadmap.
+2. Khi làm Week 02, lồng bài tập nhiều implementation (@Qualifier, @Primary) và kiểm tra khởi tạo Bean.
+3. Sau này kiểm tra transaction/JPA, test và thiết kế business logic theo đúng tuần.
 
 ## Quy tắc cập nhật
 

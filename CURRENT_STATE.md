@@ -5,12 +5,12 @@
 ## Vị trí hiện tại
 
 - Roadmap: 16 tuần
-- Current Week: 02 (sắp bắt đầu; chưa học)
-- Current Phase: Spring Core
-- Current Topic: Spring Boot fundamentals, request lifecycle (tiếp theo)
+- Current Week: 03 (sắp bắt đầu; chưa học)
+- Current Phase: JPA / Hibernate
+- Current Topic: JPA/Hibernate internals (tiếp theo)
 - Completed Sessions: 1 learning/review cycle recorded (buổi thực tế không được đếm chi tiết)
-- Last Updated: 2026-11-16
-- Overall Status: Week 01 Completed; Week 02 Not Started
+- Last Updated: 2026-11-23
+- Overall Status: Week 01–02 Completed (foundational); Week 03 Not Started
 
 ## Hồ sơ năng lực
 
@@ -22,6 +22,10 @@
 | Spring Configuration | Khá | Practiced | Tự viết @Configuration + @Bean cho PaymentClient và SmsSender |
 | Component Scanning | Khá (lý thuyết) | Explained | Xác định đúng phạm vi quét package và @Bean tạo từ AppConfig |
 | @Primary / @Qualifier | Cơ bản | Needs Practice | @Primary trong ZIP; người học báo đã tự sửa @Qualifier, chưa review code mới |
+| Starter Dependencies / Auto Configuration | Khá ở mức khái niệm | Practiced | Giải thích Maven vs Spring Boot, đọc Condition Evaluation Report (XADataSourceAutoConfiguration) |
+| Spring MVC Request Lifecycle | Cơ bản | Explained | Xác định đúng HandlerMapping tìm handler, HandlerAdapter hỗ trợ thực thi; chưa debug đầy đủ đường đi |
+| HandlerInterceptor | Cơ bản + thực hành | Practiced | Logging GET /api/hello; timing 670/516/502 ms với Thread.sleep(500) |
+| Spring Profiles (dev/test) | Cơ bản + thực hành | Practiced | Chạy 2 profile; tạo schema hotel_test từ structure-only dump, chưa có bằng chứng so sánh dữ liệu ghi thực tế |
 | Controller-Service-Repository | Cơ bản | Practiced | Đã làm CRUD |
 | REST API | Cơ bản | Practiced | Đã xây dựng API CRUD |
 | Spring Data JPA | Cơ bản | Needs Review | Đã học quan hệ entity, cascade, LAZY/EAGER |
@@ -50,9 +54,18 @@
 
 ## Ưu tiên tiếp theo
 
-1. Week 02: Spring Boot fundamentals và request lifecycle theo roadmap.
-2. Khi làm Week 02, lồng bài tập nhiều implementation (@Qualifier, @Primary) và kiểm tra khởi tạo Bean.
-3. Sau này kiểm tra transaction/JPA, test và thiết kế business logic theo đúng tuần.
+1. Week 03: JPA/Hibernate internals trên HotelBooking — tái hiện case sửa Entity có/không có @Transactional, quan sát SQL.
+2. Phân tích Persistence Context, Dirty Checking, Flush vs Commit qua hành vi code chạy thật.
+3. Khi gặp lỗi Spring MVC/Auto Configuration, quay lại điều tra case cụ thể; không học thuộc internals không có nhu cầu.
+
+## Feedback và phương pháp học (2026-11-23)
+
+- Người học cảm nhận Week 02 chưa năng suất do lý thuyết mới, trừu tượng, chưa gắn sát vấn đề trong project.
+- Phương pháp từ Week 03: **Problem → Implementation → Debug → Explanation → Review**.
+- Mỗi chủ đề phải trả lời: giải quyết vấn đề gì, khi nào dùng, áp dụng ở file/class nào, tự chạy/đo/kiểm tra ra sao.
+- Ưu tiên tự code, quan sát hành vi và debug trên HotelBooking trước khi giải thích internals. Không đưa câu hỏi suy luận về thuật ngữ chưa có trải nghiệm; không nhảy chủ đề khi người học đang xử lý một việc.
+- Tham khảo tỷ lệ thời gian linh hoạt: ~60% thực hành/debug, 25% giải thích lý thuyết, 15% review/log.
+
 
 ## Quy tắc cập nhật
 

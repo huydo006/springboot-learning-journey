@@ -1,6 +1,6 @@
 # Week 02 – Spring Boot fundamentals và request lifecycle
 
-- Status: Not Started
+- Status: Completed — foundational (2026-11-23)
 - Planned effort: 12–15 hours
 - Review file: `../03_ASSESSMENTS/WEEKLY_REVIEWS/REVIEW_WEEK_02.md`
 
@@ -27,16 +27,18 @@ Tạo REST API Category; cấu hình profile dev/test; viết interceptor ghi nh
 ## 5. Suggested Session Breakdown
 | Session | Focus | Planned time | Status |
 |---|---|---:|---|
-| 1 | Concepts and guided examples | 2–3h | Not Started |
-| 2 | Hands-on exercises | 2–3h | Not Started |
-| 3 | Apply to project | 3–4h | Not Started |
-| 4 | Review, debugging and assessment | 2–3h | Not Started |
+| 1 | Concepts and guided examples | 2–3h | Completed (discussion) |
+| 2 | Hands-on exercises | 2–3h | Completed (HotelBooking) |
+| 3 | Apply to project | 3–4h | Completed (Interceptor, profiles; not Category API) |
+| 4 | Review, debugging and assessment | 2–3h | Completed (foundational review) |
 
 ## 6. Prerequisites / Review
 - Record prerequisites discovered during the previous weekly review.
 - Do not move forward blindly if a prerequisite is marked High priority in `KNOWLEDGE_GAPS.md`.
 
 ## 7. Notes and Adjustments
-- Planned changes:
-- Actual effort:
-- What should be carried into next week:
+- Planned changes: Thay REST Category riêng bằng thực hành trên HotelBooking có sẵn; lưu lý do và giới hạn trong review.
+- Actual effort: Chưa được người học xác nhận.
+- What should be carried into next week: Chỉ debug Spring MVC/Auto Configuration khi gặp case thực tế; kiểm chứng cách ly DB test nếu cần.
+
+- Teaching method changed after feedback: Problem → Implementation → Debug → Explanation → Review. Chi tiết: [Review Week 02](../03_ASSESSMENTS/WEEKLY_REVIEWS/REVIEW_WEEK_02.md).

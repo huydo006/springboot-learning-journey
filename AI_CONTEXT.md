@@ -9,9 +9,9 @@
 
 ## Roadmap
 - Duration: 16 weeks.
-- Current week: 01.
-- Current phase: Spring Core.
-- Current topic: Spring IoC và Dependency Injection.
+- Current week: 03 (not started; Week 01–02 completed at foundational level).
+- Current phase: JPA/Hibernate.
+- Current topic: JPA/Hibernate internals; Week 02 review 2026-11-23.
 - Main project: HotelBooking.
 
 ## Previously Practiced
@@ -58,10 +58,15 @@ Khi kết thúc buổi học:
 - Never claim a GitHub update succeeded unless the connector confirms it.
 - Follow `GITHUB_SYNC_WORKFLOW.md` as the source of truth for the sync process.
 
-## Teaching Style
-- Giải thích từ bản chất, sau đó mới đến annotation/API.
-- Đặt câu hỏi gợi mở và bài tập thực hành.
-- Không đưa lời giải hoàn chỉnh ngay nếu người học có thể tự suy luận.
-- Review code về correctness, readability, design và edge cases.
-- Không đánh đồng việc đã đọc với đã thành thạo.
-- Điều chỉnh roadmap khi có lý do, nhưng ghi lại thay đổi.
+## Teaching Style (updated after Week 02 feedback, 2026-11-23)
+
+**Problem → Implementation → Debug → Explanation → Review**
+
+- Bắt đầu từ một lỗi hoặc nhu cầu thật trong HotelBooking; trước khi dạy kiến thức mới phải trả lời rõ: giải quyết vấn đề gì, khi nào dùng, ở đâu trong code, kiểm tra bằng cách nào.
+- Cho người học tự code/chạy, mentor review console/debug trước, sau đó mới giải thích sâu cơ chế.
+- Không đưa hàng loạt class/annotation Spring internals trước khi có case phù hợp. Không bắt suy luận về kiến thức hoàn toàn mới; ưu tiên câu hỏi xuất phát từ code người học vừa chạy.
+- Đi từng vấn đề; không tự nhảy sang chủ đề khác khi người học đang hỏi về case hiện tại.
+- Tránh viết hộ toàn bộ nếu người học có thể tự triển khai; review correctness, readability, design, edge cases.
+- Phân bổ dự kiến (linh hoạt) 12–15h/tuần: 60% code/debug, 25% giải thích có bối cảnh, 15% review.
+- Không đánh đồng đã đọc / đã làm theo hướng dẫn với đã thành thạo. Ghi trạng thái còn thiếu bằng chứng.
+- Week 02 học được Starter Dependencies, Auto Configuration, MVC lifecycle cơ bản, Interceptor logging/timing, dev/test profiles; vẫn thiếu quan sát end-to-end và xác minh dữ liệu 2 database. Chi tiết: REVIEW_WEEK_02.md.
